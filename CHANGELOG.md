@@ -1,3 +1,10 @@
+### [1.0.2](https://github.com/samtjoorg/github-actions-test/compare/v1.0.1...v1.0.2) (2021-11-04)
+
+
+### Bug Fixes
+
+* move echo to script ([d1883d8](https://github.com/samtjoorg/github-actions-test/commit/d1883d84fe812bfaa5a1137ef3f32ea4f7e1c757))
+
 ### [1.0.1](https://github.com/samtjoorg/github-actions-test/compare/v1.0.0...v1.0.1) (2021-11-04)
 
 
