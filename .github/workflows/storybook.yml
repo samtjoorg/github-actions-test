@@ -1,7 +1,6 @@
 name: Storybook
 on:
   push:
-    # These are the branches that we expect to publish from
     branches:
       - master
 
