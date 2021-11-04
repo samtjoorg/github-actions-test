@@ -1,3 +1,10 @@
+### [1.0.4](https://github.com/samtjoorg/github-actions-test/compare/v1.0.3...v1.0.4) (2021-11-04)
+
+
+### Bug Fixes
+
+* add semver env var ([5faf145](https://github.com/samtjoorg/github-actions-test/commit/5faf145190b228ed090ce1507d3ee3a1d2d06c54))
+
 ### [1.0.3](https://github.com/samtjoorg/github-actions-test/compare/v1.0.2...v1.0.3) (2021-11-04)
 
 
