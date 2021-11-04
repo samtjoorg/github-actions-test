@@ -23,10 +23,11 @@ jobs:
           node-version: ">=14.16.0 14"
       - run: npm ci
       - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
+          GIT_COMMITTER_NAME: samtjo
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
       - run: echo "$SEMVER_VERSION"
       - run: echo "$TEST_VAR"
         env:
           TEST_VAR: Sam
-          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
-          GIT_COMMITTER_NAME: samtjo
-          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
