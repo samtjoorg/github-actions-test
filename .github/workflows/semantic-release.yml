@@ -27,3 +27,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
           GIT_COMMITTER_NAME: samtjo
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
+      - run: echo "$SEMVER_VERSION"

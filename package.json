@@ -76,7 +76,7 @@
       [
         "@semantic-release/exec",
         {
-          "successCmd": "./scripts/publish_docs.sh"
+          "successCmd": "SEMVER_VERSION=${nextRelease.version}"
         }
       ],
       "@semantic-release/github"
