@@ -1,1 +1,1 @@
-echo\"SEMVER_VERSION=${nextRelease.version}\" > $GITHUB_ENV
+echo \"SEMVER_VERSION=${nextRelease.version}\"
