@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/samtjoorg/github-actions-test/compare/v1.0.14...v1.1.0) (2021-11-05)
+
+
+### Features
+
+* **button:** make primary green ([0b87ea2](https://github.com/samtjoorg/github-actions-test/commit/0b87ea23c03358448725b0f0af9123e6365ad630))
+
 ### [1.0.14](https://github.com/samtjoorg/github-actions-test/compare/v1.0.13...v1.0.14) (2021-11-05)
 
 
