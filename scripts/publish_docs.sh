@@ -1,1 +1,0 @@
-echo \"SEMVER_VERSION=${nextRelease.version}\"

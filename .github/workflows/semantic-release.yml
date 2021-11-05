@@ -28,3 +28,13 @@ jobs:
           GIT_COMMITTER_NAME: samtjo
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
       - run: echo "$SEMVER_VERSION"
+
+      - run: NODE_ENV=production npm run build-storybook
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+      - name: Publish versioned docs
+        if: ${{ env.SEMVER_VERSION }}
+        run: aws s3 sync ./storybook-static/ s3://carbon-versioned/archive/{env.SEMVER_VERSION}
