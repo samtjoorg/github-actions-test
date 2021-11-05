@@ -1,3 +1,10 @@
+### [1.3.1](https://github.com/samtjoorg/github-actions-test/compare/v1.3.0...v1.3.1) (2021-11-05)
+
+
+### Bug Fixes
+
+* provide storybook url ([40363c6](https://github.com/samtjoorg/github-actions-test/commit/40363c66183cf104c89ae8f242695d869648d06e))
+
 ## [1.3.0](https://github.com/samtjoorg/github-actions-test/compare/v1.2.0...v1.3.0) (2021-11-05)
 
 
