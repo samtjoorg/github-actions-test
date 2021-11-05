@@ -1,3 +1,10 @@
+### [1.0.12](https://github.com/samtjoorg/github-actions-test/compare/v1.0.11...v1.0.12) (2021-11-05)
+
+
+### Bug Fixes
+
+* test ([8505f2b](https://github.com/samtjoorg/github-actions-test/commit/8505f2bfb10a20a7d8a98478afff1bffffe12800))
+
 ### [1.0.11](https://github.com/samtjoorg/github-actions-test/compare/v1.0.10...v1.0.11) (2021-11-05)
 
 
