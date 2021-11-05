@@ -34,6 +34,7 @@ jobs:
         run: echo "::set-output name=version::$SEMVER_VERSION"
 
   publish:
+    runs-on: ubuntu-latest
     if: ${{ needs.release.outputs.version != null }}
     steps:
       - run: echo needs.release.outputs.version
