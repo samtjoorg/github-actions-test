@@ -82,5 +82,8 @@
       ],
       "@semantic-release/github"
     ]
+  },
+  "storybook": {
+    "url": "https://61853c38898918003aef73ed-gqpisdkcil.chromatic.com"
   }
 }
