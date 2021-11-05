@@ -35,6 +35,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    needs: release
     if: ${{ needs.release.outputs.version != null }}
     steps:
       - run: echo needs.release.outputs.version
