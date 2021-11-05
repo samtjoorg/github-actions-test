@@ -1,3 +1,10 @@
+### [1.4.1](https://github.com/samtjoorg/github-actions-test/compare/v1.4.0...v1.4.1) (2021-11-05)
+
+
+### Bug Fixes
+
+* change chromatic url ([085a870](https://github.com/samtjoorg/github-actions-test/commit/085a87097a127652d46f7d937776c1a61a5aea3b))
+
 ## [1.4.0](https://github.com/samtjoorg/github-actions-test/compare/v1.3.1...v1.4.0) (2021-11-05)
 
 
