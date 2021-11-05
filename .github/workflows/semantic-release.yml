@@ -39,6 +39,14 @@ jobs:
     if: ${{ needs.release.outputs.version != null }}
     steps:
       - run: echo ${{needs.release.outputs.version}}
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ">=14.16.0 14"
+      - run: npm ci
       - run: NODE_ENV=production npm run build-storybook
       - uses: aws-actions/configure-aws-credentials@v1
         with:
