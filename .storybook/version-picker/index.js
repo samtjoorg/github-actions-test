@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useParameter } from "@storybook/api";
 import {
   Icons,
   IconButton,
@@ -10,7 +9,7 @@ import {
 import { TOOL_ID } from "./constants";
 import fetchData from "./fetch-data";
 
-const getDisplayedItems = (versions, selectedVerion, change) => {
+const getDisplayedItems = (versions, change) => {
   let formattedVersions = [];
 
   for (const [key, value] of Object.entries(versions)) {
@@ -20,7 +19,6 @@ const getDisplayedItems = (versions, selectedVerion, change) => {
       onClick: () => {
         change();
       },
-      value: "test",
       active: false,
       href: value,
       target: "_blank",
@@ -31,11 +29,6 @@ const getDisplayedItems = (versions, selectedVerion, change) => {
 };
 
 export const VersionPicker = () => {
-  const versionsConfig = useParameter("versions", {
-    default: null,
-    disable: true,
-    values: [],
-  });
   const [versions, setVersions] = useState();
   const [currentVersion, setCurrentVersion] = useState("Latest");
 
@@ -46,7 +39,6 @@ export const VersionPicker = () => {
       const endIndex = url.indexOf("/", startIndex + 10);
 
       const urlVersion = url.substring(startIndex + 9, endIndex);
-      console.log("url version", url, startIndex, endIndex, urlVersion);
       setCurrentVersion(urlVersion);
     }
 
@@ -67,7 +59,7 @@ export const VersionPicker = () => {
         tooltip={({ onHide }) => {
           return (
             <TooltipLinkList
-              links={getDisplayedItems(versions, undefined, () => {
+              links={getDisplayedItems(versions, () => {
                 onHide();
               })}
             />
