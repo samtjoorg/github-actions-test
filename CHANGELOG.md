@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/samtjoorg/github-actions-test/compare/v1.5.0...v1.6.0) (2021-11-10)
+
+
+### Features
+
+* add wip version switcher ([3585d23](https://github.com/samtjoorg/github-actions-test/commit/3585d23a1b3e99f19e84801b47825660be70ed21))
+
 ## [1.5.0](https://github.com/samtjoorg/github-actions-test/compare/v1.4.1...v1.5.0) (2021-11-05)
 
 
