@@ -14,7 +14,6 @@ const getDisplayedItems = (versions, selectedVerion, change) => {
   let formattedVersions = [];
 
   for (const [key, value] of Object.entries(versions)) {
-    console.log(`${key}: ${value}`);
     formattedVersions.push({
       id: key,
       title: key,
@@ -22,7 +21,6 @@ const getDisplayedItems = (versions, selectedVerion, change) => {
         change();
       },
       value: "test",
-      right: undefined,
       active: false,
       href: value,
       target: "_blank",
@@ -39,10 +37,26 @@ export const VersionPicker = () => {
     values: [],
   });
   const [versions, setVersions] = useState();
-  // const [currentVersion, setCurrentVersion] = useState();
+  const [currentVersion, setCurrentVersion] = useState("Latest");
 
   useEffect(() => {
-    setVersions(fetchData());
+    // If URL contains a version number, set current version to that
+    const url = window.location.href;
+    if (url.includes("/archive/")) {
+      const startIndex = url.indexOf("/?path=/");
+      const endIndex = url.indexOf("/", startIndex + 10);
+
+      const urlVersion = url.substring(startIndex + 9, endIndex);
+      console.log("url version", url, startIndex, endIndex, urlVersion);
+      setCurrentVersion(urlVersion);
+    }
+
+    const getData = async () => {
+      const data = await fetchData();
+      setVersions(data.versions);
+    };
+
+    getData();
   }, []);
 
   if (versions) {
@@ -70,7 +84,7 @@ export const VersionPicker = () => {
        Checkout https://next--storybookjs.netlify.app/official-storybook/?path=/story/basics-icon--labels
        for the full list of icons
       */}
-          Version
+          {`${currentVersion}`}
           <Icons icon="arrowdown" />
         </IconButton>
       </WithTooltip>
