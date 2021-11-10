@@ -1,3 +1,10 @@
+### [1.6.2](https://github.com/samtjoorg/github-actions-test/compare/v1.6.1...v1.6.2) (2021-11-10)
+
+
+### Bug Fixes
+
+* update version picker ([652a47d](https://github.com/samtjoorg/github-actions-test/commit/652a47d3014e67a4a6f91b6fe6722b41ce37c872))
+
 ### [1.6.1](https://github.com/samtjoorg/github-actions-test/compare/v1.6.0...v1.6.1) (2021-11-10)
 
 
