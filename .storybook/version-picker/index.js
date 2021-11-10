@@ -40,10 +40,9 @@ export const VersionPicker = () => {
   const [currentVersion, setCurrentVersion] = useState("Latest");
 
   useEffect(() => {
-    // If URL contains a version number, set current version to that
     const url = window.location.href;
     if (url.includes("/archive/")) {
-      const startIndex = url.indexOf("/?path=/");
+      const startIndex = url.indexOf("/archive/");
       const endIndex = url.indexOf("/", startIndex + 10);
 
       const urlVersion = url.substring(startIndex + 9, endIndex);
