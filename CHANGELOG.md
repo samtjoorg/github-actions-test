@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/samtjoorg/github-actions-test/compare/v1.8.0...v1.9.0) (2021-11-10)
+
+
+### Features
+
+* remove icon ([e757e03](https://github.com/samtjoorg/github-actions-test/commit/e757e03078bff10585786bb8a64a09946ea8be32))
+
 ## [1.8.0](https://github.com/samtjoorg/github-actions-test/compare/v1.7.1...v1.8.0) (2021-11-10)
 
 
