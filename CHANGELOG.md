@@ -1,3 +1,10 @@
+### [1.7.1](https://github.com/samtjoorg/github-actions-test/compare/v1.7.0...v1.7.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* fix index ([34764c0](https://github.com/samtjoorg/github-actions-test/commit/34764c08dccec07e1e0c935fb3dffde81df52a00))
+
 ## [1.7.0](https://github.com/samtjoorg/github-actions-test/compare/v1.6.2...v1.7.0) (2021-11-10)
 
 
