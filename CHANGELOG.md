@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/samtjoorg/github-actions-test/compare/v1.6.2...v1.7.0) (2021-11-10)
+
+
+### Features
+
+* generate new minor version ([c7c76fe](https://github.com/samtjoorg/github-actions-test/commit/c7c76fe0985796fabcbf806bfead584bcd414f4c))
+
 ### [1.6.2](https://github.com/samtjoorg/github-actions-test/compare/v1.6.1...v1.6.2) (2021-11-10)
 
 
