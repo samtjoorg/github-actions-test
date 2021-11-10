@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/samtjoorg/github-actions-test/compare/v1.7.1...v1.8.0) (2021-11-10)
+
+
+### Features
+
+* bump version ([abf3e12](https://github.com/samtjoorg/github-actions-test/commit/abf3e12d23f6a5c79af7c1b28a63b93d0fd3de28))
+
 ### [1.7.1](https://github.com/samtjoorg/github-actions-test/compare/v1.7.0...v1.7.1) (2021-11-10)
 
 
