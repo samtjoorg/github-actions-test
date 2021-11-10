@@ -1,3 +1,10 @@
+### [1.6.1](https://github.com/samtjoorg/github-actions-test/compare/v1.6.0...v1.6.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* dont overwrite metadata ([03a9479](https://github.com/samtjoorg/github-actions-test/commit/03a9479d6d4191b7bb48249429a945b44661a305))
+
 ## [1.6.0](https://github.com/samtjoorg/github-actions-test/compare/v1.5.0...v1.6.0) (2021-11-10)
 
 
