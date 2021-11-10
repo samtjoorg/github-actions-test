@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  Icons,
   IconButton,
   WithTooltip,
   TooltipLinkList,
@@ -71,12 +70,7 @@ export const VersionPicker = () => {
           active={false}
           title="Open docs for a different version"
         >
-          {/*
-       Checkout https://next--storybookjs.netlify.app/official-storybook/?path=/story/basics-icon--labels
-       for the full list of icons
-      */}
           {`${currentVersion}`}
-          <Icons icon="arrowdown" />
         </IconButton>
       </WithTooltip>
     );
