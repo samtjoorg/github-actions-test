@@ -1,3 +1,10 @@
+### [1.9.1](https://github.com/samtjoorg/github-actions-test/compare/v1.9.0...v1.9.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* turn button red ([8230f11](https://github.com/samtjoorg/github-actions-test/commit/8230f11eb21c03442f6ce192f5093a6af7b2c9ff))
+
 ## [1.9.0](https://github.com/samtjoorg/github-actions-test/compare/v1.8.0...v1.9.0) (2021-11-10)
 
 
