@@ -1,0 +1,152 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "class-methods-use-this": "off",
+    "func-names": "off",
+    "guard-for-in": "off",
+    "import/extensions": ["off", "never"],
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/label-has-for": "warn",
+    "jsx-a11y/mouse-events-have-key-events": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "max-params": ["error", 5],
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-new-func": "error",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-restricted-syntax": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": ["error", { "functions": false, "classes": false }],
+    "one-var": "off",
+    "prefer-const": ["error", { "destructuring": "any" }],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      }
+    ],
+    "radix": "off",
+    "react/destructuring-assignment": 0,
+    "react/no-this-in-sfc": 0,
+    "react/no-unescaped-entities": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-no-bind": [
+      "error",
+      { "allowArrowFunctions": true, "allowFunctions": true }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-uses-react": "warn",
+    "react/jsx-uses-vars": "warn",
+    "react/forbid-prop-types": "off",
+    "react/no-array-index-key": "warn",
+    "react/prop-types": "warn",
+    "react/require-default-props": "off",
+    "react/sort-comp": [
+      "error",
+      {
+        "order": [
+          "static-methods",
+          "lifecycle",
+          "/^on.+$/",
+          "/^(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+          "everything-else",
+          "/^render.+$/",
+          "render"
+        ]
+      }
+    ],
+    "react/state-in-constructor": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // Copy from airbnb with UNSAFE_ ignore added
+    "camelcase": [
+      "error",
+      {
+        "allow": ["^UNSAFE_"],
+        "properties": "never",
+        "ignoreDestructuring": false
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "styled-system",
+            "importNames": ["color"],
+            "message": "Please use the default export from 'src/style/utils/color' instead."
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jasmine": true,
+    "cypress/globals": true
+  },
+  "extends": [
+    "plugin:no-unsanitized/DOM",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["cypress", "react", "react-hooks"],
+  "globals": {
+    "jest": false,
+    "global": false,
+    "process": false,
+    "test": false,
+    "Given": true,
+    "When": true,
+    "Then": true,
+    "And": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "project": "./tsconfig.json"
+      },
+      "plugins": ["@typescript-eslint", "jest"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "prettier/@typescript-eslint",
+        "plugin:react-hooks/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest-dom/recommended"
+      ],
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+      "rules": {
+        "import/named": "off",
+        "react/prefer-stateless-function": "off"
+      }
+    }
+  ]
+}
