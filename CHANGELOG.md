@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/samtjoorg/github-actions-test/compare/v1.9.1...v1.10.0) (2021-11-10)
+
+
+### Features
+
+* turn button yellow ([53fe7fc](https://github.com/samtjoorg/github-actions-test/commit/53fe7fcfd8d643272f42984b34057aa51932e211))
+
 ### [1.9.1](https://github.com/samtjoorg/github-actions-test/compare/v1.9.0...v1.9.1) (2021-11-10)
 
 
