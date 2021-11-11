@@ -1,3 +1,10 @@
+## [1.12.0](https://github.com/samtjoorg/github-actions-test/compare/v1.11.0...v1.12.0) (2021-11-11)
+
+
+### Features
+
+* **button:** turn it green ([812984f](https://github.com/samtjoorg/github-actions-test/commit/812984f42d7fcda81fed77c9e589347eb6ca6064))
+
 ## [1.11.0](https://github.com/samtjoorg/github-actions-test/compare/v1.10.0...v1.11.0) (2021-11-11)
 
 
