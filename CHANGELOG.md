@@ -1,3 +1,10 @@
+### [1.12.1](https://github.com/samtjoorg/github-actions-test/compare/v1.12.0...v1.12.1) (2021-11-11)
+
+
+### Bug Fixes
+
+* **button:** turn it red ([ba02ba3](https://github.com/samtjoorg/github-actions-test/commit/ba02ba3d2cf3a3cf39ef7174599b73c97624c97e))
+
 ## [1.12.0](https://github.com/samtjoorg/github-actions-test/compare/v1.11.0...v1.12.0) (2021-11-11)
 
 
