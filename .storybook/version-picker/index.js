@@ -24,6 +24,10 @@ const getDisplayedItems = (versions, change) => {
     });
   }
 
+  formattedVersions[0].title = `${formattedVersions[0].title} (latest)`;
+  formattedVersions[0].href =
+    "https://carbon-versioned.s3.eu-west-1.amazonaws.com/index.html";
+
   return formattedVersions;
 };
 
