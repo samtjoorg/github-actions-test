@@ -1,3 +1,10 @@
+## [1.11.0](https://github.com/samtjoorg/github-actions-test/compare/v1.10.0...v1.11.0) (2021-11-11)
+
+
+### Features
+
+* show latest version ([1809562](https://github.com/samtjoorg/github-actions-test/commit/18095628fdfb931986f932c0a01888b5fd32a63a))
+
 ## [1.10.0](https://github.com/samtjoorg/github-actions-test/compare/v1.9.1...v1.10.0) (2021-11-10)
 
 
