@@ -1,3 +1,10 @@
+## [1.15.0](https://github.com/samtjoorg/github-actions-test/compare/v1.14.0...v1.15.0) (2021-11-18)
+
+
+### Features
+
+* make button yellow ([917852d](https://github.com/samtjoorg/github-actions-test/commit/917852d992ae57e35b459797a43c5c891fff4eed))
+
 ## [1.14.0](https://github.com/samtjoorg/github-actions-test/compare/v1.13.0...v1.14.0) (2021-11-18)
 
 
