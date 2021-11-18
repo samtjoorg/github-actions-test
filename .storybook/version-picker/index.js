@@ -8,16 +8,14 @@ import {
 import { TOOL_ID } from "./constants";
 import fetchData from "./fetch-data";
 
-const getDisplayedItems = (versions, change) => {
+const getDisplayedItems = (versions, onClick) => {
   let formattedVersions = [];
 
   for (const [key, value] of Object.entries(versions)) {
     formattedVersions.push({
       id: key,
       title: key,
-      onClick: () => {
-        change();
-      },
+      onClick,
       active: false,
       href: value,
       target: "_blank",
@@ -25,8 +23,6 @@ const getDisplayedItems = (versions, change) => {
   }
 
   formattedVersions[0].title = `${formattedVersions[0].title} (latest)`;
-  formattedVersions[0].href =
-    "https://carbon-versioned.s3.eu-west-1.amazonaws.com/index.html";
 
   return formattedVersions;
 };
@@ -61,11 +57,7 @@ export const VersionPicker = () => {
         closeOnClick
         tooltip={({ onHide }) => {
           return (
-            <TooltipLinkList
-              links={getDisplayedItems(versions, () => {
-                onHide();
-              })}
-            />
+            <TooltipLinkList links={getDisplayedItems(versions, onHide)} />
           );
         }}
       >

@@ -10,7 +10,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "conventional-changelog-conventionalcommits": "^4.5.0",
+    "cors": "^2.8.5",
     "cz-conventional-changelog": "^3.3.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -22,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "generate-metadata": "node ./scripts/generate_metadata/index.mjs"
   },
   "eslintConfig": {
     "extends": [
