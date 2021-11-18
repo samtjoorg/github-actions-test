@@ -1,3 +1,10 @@
+## [1.13.0](https://github.com/samtjoorg/github-actions-test/compare/v1.12.2...v1.13.0) (2021-11-18)
+
+
+### Features
+
+* remove archive folder ([3c6621e](https://github.com/samtjoorg/github-actions-test/commit/3c6621eb3eedc29fd640b165fc6381f8be1ce5f8))
+
 ### [1.12.2](https://github.com/samtjoorg/github-actions-test/compare/v1.12.1...v1.12.2) (2021-11-18)
 
 
