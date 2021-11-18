@@ -1,3 +1,10 @@
+### [1.12.2](https://github.com/samtjoorg/github-actions-test/compare/v1.12.1...v1.12.2) (2021-11-18)
+
+
+### Bug Fixes
+
+* test npm fetch failure ([2f2c35f](https://github.com/samtjoorg/github-actions-test/commit/2f2c35f6ed3f8a365fe98c6b715e5033d946a05b))
+
 ### [1.12.1](https://github.com/samtjoorg/github-actions-test/compare/v1.12.0...v1.12.1) (2021-11-11)
 
 
