@@ -33,12 +33,12 @@ export const VersionPicker = () => {
 
   useEffect(() => {
     const url = window.location.href;
-    if (url.includes("/archive/")) {
-      const startIndex = url.indexOf("/archive/");
-      const endIndex = url.indexOf("/", startIndex + 10);
+    if (url.includes("/v/")) {
+      const startIndex = url.indexOf("/v/");
+      const endIndex = url.indexOf("/", startIndex + 4);
 
-      const urlVersion = url.substring(startIndex + 9, endIndex);
-      setCurrentVersion(urlVersion);
+      const urlVersion = url.substring(startIndex + 3, endIndex);
+      setCurrentVersion(`v${urlVersion}`);
     }
 
     const getData = async () => {

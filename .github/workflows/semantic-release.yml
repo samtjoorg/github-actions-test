@@ -55,4 +55,4 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
-      - run: aws s3 sync ./storybook-static/ s3://carbon-versioned/archive/v${{needs.release.outputs.version}}
+      - run: aws s3 sync ./storybook-static/ s3://carbon-versioned/v/${{needs.release.outputs.version}}
