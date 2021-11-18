@@ -1,3 +1,10 @@
+## [1.14.0](https://github.com/samtjoorg/github-actions-test/compare/v1.13.0...v1.14.0) (2021-11-18)
+
+
+### Features
+
+* remove metadata step ([b58af29](https://github.com/samtjoorg/github-actions-test/commit/b58af29955eedbe279760acf9ca2d137eb73f4ef))
+
 ## [1.13.0](https://github.com/samtjoorg/github-actions-test/compare/v1.12.2...v1.13.0) (2021-11-18)
 
 
