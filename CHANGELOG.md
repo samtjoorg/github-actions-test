@@ -1,3 +1,10 @@
+### [1.15.1](https://github.com/samtjoorg/github-actions-test/compare/v1.15.0...v1.15.1) (2021-11-18)
+
+
+### Bug Fixes
+
+* make button green ([f00ae50](https://github.com/samtjoorg/github-actions-test/commit/f00ae50ec756b6c828480f0efd88fd2d0e90520c))
+
 ## [1.15.0](https://github.com/samtjoorg/github-actions-test/compare/v1.14.0...v1.15.0) (2021-11-18)
 
 
